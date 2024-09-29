@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="autor" content="Reda MEHIDI" />
+    <meta
+      name="description"
+      content="Site de description de la ville de Paris. Il a été concu dans le cadre d'un projet universitaire dans le but d'apprendre le language HTML5."
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+
+    <title>Site de présentation de la ville de Paris</title>
+  </head>
+
+  <body>
+    <!-- Balise header : Correspond à l'entête/la banière du site web-->
+    <header>
+      <img
+        src="./img/logo.jpg"
+        alt="Logo cliquable de mon site. Permet de se rediriger vers la page d'accueil"
+      />
+      <hgroup>
+        <h1>Paris, une ville magique</h1>
+        <p>Découvrir la ville de paris</p>
+      </hgroup>
+      <hr />
+    </header>
+    <!-- Balise NAV : Correspond au menu de navigation principal de mon site web-->
+    <nav>
+      <ul>
+        <li><a href="./index.html">Présentation</a></li>
+        <li><a href="./monuments.html">Monuments incontournables</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <hr />
+    </nav>
+
+    <!-- ####### CONTENU DE MA PAGE ###### -->
+    <main id="indexPage">
+      <!-- Menu latéral pour naviguer dans les pages longues -->
+      <aside>
+        <h2>Accès Rapide</h2>
+        <ul>
+          <li><a href="#Histoire">Son histoire</a></li>
+          <li><a href="#Video">Vidéo de présentation</a></li>
+          <li><a href="#PSG">Son club de football</a></li>
+          <li><a href="#Monuments">Les monuments</a></li>
+        </ul>
+      </aside>
+      <!--Contenu Principal -->
+      <section>
+        <h2>Présentation de la ville de Paris</h2>
+
+        <article id="Histoire">
+          <h3>Son Histoire</h3>
+
+          <p>
+            Historiquement, Paris a été occupée 3e siècles avant notre ère sous
+            le nom Lutèce par le peuple gaulois des Parisii. Au début du VIe
+            siècle, Clovis choisit Paris comme capitale de son royaume.
+            <br />
+
+            Aujourd'hui, elle est la capitale de la France et est divisé en 20
+            arrondissements. Elle est située au centre de la région ile de
+            france et est traversée par l'emblématique <em>Seine</em>.
+          </p>
+          <p>
+            Il faut noter qu'elle a été élue comme
+            <strong>la plus belle ville du monde </strong> pour la deuxième
+            année consécutive !<br />
+            Vous comprendrez donc pourquoi ce site est incontournable pour
+            obtenir les principaux éléments avant votre visite à
+            <em>Paris</em> !
+          </p>
+        </article>
+        <article id="Video">
+          <h3>
+            Vidéo de présentation de la Ville de Paris par
+            <a href="https://www.youtube.com/@expediafr">Expedia</a>
+          </h3>
+          <iframe
+            src="https://www.youtube.com/embed/bQoOev5GNYM?si=gsudHG4RB2jLf6tY"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </article>
+        <article id="PSG">
+          <h3>Son club de football</h3>
+          <figure>
+            <a href="https://www.psg.fr/"
+              ><img
+                src="./img/sources/logo-psg.png"
+                alt="Image cliquable de l'écusson du Paris Saint Germain permettant d'accéder au site officiel du PSG"
+              />
+            </a>
+            <figcaption>
+              Ecusson du club du <abbr title="Paris Saint Germain">PSG</abbr>
+            </figcaption>
+          </figure>
+          <p>
+            Son club de football mythique est le
+            <abbr title="Paris Saint Germain">PSG</abbr>. Ce club porte les
+            couleurs bleu et rouge et leur slogan est
+            <em>Paris est magique !</em> <br />
+            Il a été créé en 1970 lors de la fusion entre la section football du
+            <em>Stade Saint Germanois</em> et du <em>Paric FC</em>.<br />
+            De nombreuses stars internationnales du football ont été signés dans
+            ce club. <br />
+
+            <br />Voici un tableau récapitulatif des joueurs de légende
+            mentionné sur leur site internet :
+          </p>
+          <table>
+            <caption>
+              Statistique des joueurs de légendes du
+              <abbr title="Paris Saint Germain">PSG</abbr>
+            </caption>
+            <thead>
+              <tr>
+                <th>Nom du Joueur</th>
+
+                <th>Saisons joués</th>
+                <th>Matches joués</th>
+                <th>Buts marqués</th>
+                <th>Passes décisives</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ronaldinhio</td>
+                <td>2</td>
+                <td>77</td>
+                <td>25</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>Pauleta</td>
+                <td>5</td>
+                <td>252</td>
+                <td>136</td>
+                <td><abbr title="Non communiqué">n.c</abbr></td>
+              </tr>
+              <tr>
+                <td>David Beckhan</td>
+                <td>1</td>
+                <td>14</td>
+                <td><abbr title="Non communiqué">n.c</abbr></td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Zlatan Ibrahimovic</td>
+                <td>4</td>
+                <td>180</td>
+                <td>156</td>
+                <td>54</td>
+              </tr>
+              <tr>
+                <td>Rai</td>
+                <td>5</td>
+                <td>228</td>
+                <td>75</td>
+                <td><abbr title="Non communiqué">n.c</abbr></td>
+              </tr>
+              <tr>
+                <td>George Weah</td>
+                <td>3</td>
+                <td>138</td>
+                <td>55</td>
+                <td><abbr title="Non communiqué">n.c</abbr></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">
+                  Source: Site officiel du
+                  <a href="https://www.psg.fr/">
+                    <abbr title="Paris Saint Germain">PSG</abbr>
+                  </a>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <p>
+            En terme de football, son principal rival est
+            <abbr title="L'Olympique Marseillaise"> l'OM</abbr> qui se prétend
+            être meilleur puisqu'ils ont l'<strong> étoile</strong> sur le
+            maillot !
+          </p>
+        </article>
+
+        <article id="Monuments">
+          <h3>Les principaux monuments de la ville de Paris</h3>
+          <p>La ville de Paris regroupe un grand nombre de monument :</p>
+          <ul>
+            <li><a href="./monuments.html#TourEiffel">La Tour Eiffel</a></li>
+            <li><a href="./monuments.html#Louvre">Le Musée du Louvre</a></li>
+            <li><a href="./monuments.html#SacreCoeur">Le Sacré Coeur</a></li>
+            <li>
+              <a href="./monuments.html#NotreDame">La Cathédrale Notre Dame</a>
+            </li>
+            <li>
+              <a href="./monuments.html#ArcTriomphe">L'Arc de Triomphe</a>
+            </li>
+            <li>
+              <a href="./monuments.html#JardinTuileries"
+                >Le Jardins des Tuileries</a
+              >
+            </li>
+            <li>
+              <a href="./monuments.html#Concorde">La Place de la Concorde</a>
+            </li>
+            <!--
+            <li><a href="./monuments.html#GrandPalais">Le Grand Palais</a></li>
+            <li>
+              <a href="./monuments.html#QuaiBranly">Le musée du quai Branly</a>
+            </li>
+          --></ul>
+        </article>
+      </section>
+
+      <aside>
+        <hr />
+
+        <h2>Sources</h2>
+        <section>
+          <h3>Wiki ville de paris</h3>
+          <a href="https://fr.wikipedia.org/wiki/Paris">
+            <img src="./img/sources/logo-wiki.jpg" alt="logo wikipedia"
+          /></a>
+        </section>
+        <section>
+          <h3>Monuments Paris</h3>
+          <a
+            href="https://www.cometoparis.com/fre/decouvrir-paris/monuments-de-paris-s1032"
+            ><img
+              src="./img/sources/MonumentsParis.png"
+              alt="logo site Monuments de Paris"
+          /></a>
+        </section>
+        <section>
+          <h3>Site du PSG</h3>
+          <a href="https://www.psg.fr/"
+            ><img src="./img/sources/logo-psg.png" alt="logo du PSG" />
+          </a>
+        </section>
+        <section>
+          <h3>Page Youtube d'Expedia</h3>
+          <a href="https://www.youtube.com/@expediafr">
+            <img src="./img/sources/expedia.png" alt="logo expedia" />
+          </a>
+        </section>
+      </aside>
+    </main>
+
+    <!-- ####### Fin du CONTENU DE MA PAGE ###### -->
+    <!-- Balise footer : Correspond au footer / pied de page de mon site web-->
+    <footer>
+      <hr />
+      <p>
+        Les données, photos, extraits de ce site sont issus des sites suivants:
+      </p>
+      <ul>
+        <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
+        <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
+
+        <li><a href="https://www.psg.fr/">PSG</a></li>
+        <li><a href="https://www.youtube.com/">Youtube</a></li>
+      </ul>
+
+      <a href="http://validator.w3.org/check?uri=referer"
+        ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
+      /></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="autor" content="Reda MEHIDI" />
+    <meta
+      name="description"
+      content="Site de description de la ville de Paris. Il a été concu dans le cadre d'un projet universitaire dans le but d'apprendre le language HTML5."
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+
+    <title>Site de présentation de la ville de Paris</title>
+  </head>
+
+  <body>
+    <!-- Balise header : Correspond à l'entête/la banière du site web-->
+    <header>
+      <img
+        src="./img/logo.jpg"
+        alt="Logo cliquable de mon site. Permet de se rediriger vers la page d'accueil"
+      />
+      <hgroup>
+        <h1>Paris, une ville magique</h1>
+        <p>Découvrir la ville de paris</p>
+      </hgroup>
+      <hr />
+    </header>
+    <!-- Balise NAV : Correspond au menu de navigation principal de mon site web-->
+    <nav>
+      <ul>
+        <li><a href="./index.html">Présentation</a></li>
+        <li><a href="./monuments.html">Monuments incontournables</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <hr />
+    </nav>
+
+    <!-- ####### CONTENU DE MA PAGE ###### -->
+    <main id="monumentsPage">
+      <!-- Menu latéral pour naviguer dans les pages longues -->
+      <aside>
+        <h2>Accès Rapide</h2>
+        <ul>
+          <li><a href="#TourEiffel">La Tour Eiffel</a></li>
+          <li><a href="#Louvre">Le Musée du Louvre</a></li>
+          <li><a href="#SacreCoeur">La Basilique du Sacré-Coeur</a></li>
+          <li><a href="#NotreDame">La Cathédrale Notre-Dame de Paris</a></li>
+          <li><a href="#ArcTriomphe">L'Arc de Triomphe</a></li>
+          <li><a href="#JardinTuileries">Le Jardins des Tuileries</a></li>
+          <li><a href="#Concorde">La Place de la Concorde</a></li>
+          <!-- TODO
+          <li><a href="#GrandPalais">Le Grand Palais</a></li>
+          <li><a href="#QuaiBranly">Le musée du quai Branly</a></li>
+          -->
+        </ul>
+      </aside>
+      <!--Contenu Principal -->
+      <section>
+        <h2>Les Monuments incontournables</h2>
+
+        <article id="TourEiffel">
+          <h3>La Tour Eiffel</h3>
+          <img
+            src="./img/monuments/toureiffel.webp"
+            alt="Image de la Tour Eiffel"
+          />
+          <p>
+            La <strong>Tour Eiffel</strong> a été innaugurée en 1889 à
+            l'occasion de l'Exposition Universelle, date marquant le centenaire
+            de la Révolution Française.
+            <br />
+            Elle a été conçu par le bureau d'étude de
+            <em>M.Gustave Eiffel</em> et sa construction a débutée en 1887 pour
+            une durée de 26 mois. <br />
+            Sa hauteur initiale était de 300m et actuellement avec les
+            différentes anteines elle dépasse 330m.
+          </p>
+          <details>
+            <summary>Comment y accéder ?</summary>
+            <p>
+              Située à la <em>Place de la résitance</em> dans le 7<sup>ème</sup>
+              Arrondissements de Paris.
+            </p>
+            <h4>En Transport en commun :</h4>
+            <ul>
+              <li>Metro 6 - Arrêt <strong>Bir-Hakeim</strong></li>
+              <li>Rer C arrêt <strong>Champ de Mars Tour eiffel</strong></li>
+            </ul>
+            <h4>En voiture :</h4>
+            <ul>
+              <li>
+                Parking : <strong>Pullman</strong> - 18 Av. de Suffren, 75015
+                Paris
+              </li>
+              <li>
+                Parking : <strong>Saint-Dominique</strong> - 133 Rue
+                Saint-Dominique, 75007 Paris
+              </li>
+            </ul>
+          </details>
+        </article>
+        <article id="Louvre">
+          <h3>Le Musée du Louvre</h3>
+          <img src="./img/monuments/louvre.webp" alt="Image du Louvre" />
+          <p>
+            Le <strong>Palais du Louvre</strong> a été construit en 1190 et sa
+            construction a durée plus de <em>800 ans </em>. <br />
+            C'est un ancien palas royal situé dans le 1
+            <sup>er</sup> Arrondissement de Paris.<br />
+            Il a été pendant de nombreuses années le grand palais royal conservé
+            jusqu'au règne de Louis XIV.
+          </p>
+          <details>
+            <summary>Comment y accéder ?</summary>
+            <p>
+              Située dans le 1<sup>er</sup> Arrondissements de Paris entre le
+              <a href="#JardinTuileries">Jardins de la Tuileries</a> et l'église
+              Saint-Germian-l'Auxerrois
+            </p>
+            <h4>En Transport en commun :</h4>
+            <ul>
+              <li>Metro 1 - Arrêt <strong>Louvre - Rivoli</strong></li>
+              <li>
+                Metro 7 - Arrêt <strong>Palais Royal Musée du Louvre</strong>
+              </li>
+            </ul>
+            <h4>En voiture :</h4>
+            <ul>
+              <li>
+                Parking : <strong>Public Le Louvre </strong> - 1 Rue de Marengo,
+                75001 Paris
+              </li>
+              <li>
+                Parking : <strong>Indigo Paris Louvre Samaritaine </strong> - 1
+                Pl. du Louvre, 75001 Paris
+              </li>
+            </ul>
+          </details>
+        </article>
+        <article id="SacreCoeur">
+          <h3>Basilique du Sacré-Coeur de Monmartre</h3>
+          <img
+            src="./img/monuments/sacrecoeur.webp"
+            alt="Image du Sacré-Coeur"
+          />
+          <p>
+            La <strong>basilique du Sacré-Coeur</strong> est une église située
+            dans le 18<sup>eme</sup> Arrondissement de Paris. <br />
+            Monument politique et culturel, sa construction a débutée en
+            <em>1875</em> et achevée en <em>1923</em>. <br />
+            Elle règle sur l'ensemble de la capitale : elle est au sommet de la
+            butte Monmartre. On y voit le jeu de lumière de la
+            <a href="#TourEiffel"> Tour Eiffel</a>.
+            <br />
+            Le quartier qui l'entoure est assez dynamique avec des restaurants
+            mais aussi de nombreux artistes peintres de rue.<br />
+            Il est impératif de repartir de cette visite avec votre
+            auto-portrait déssiné en direct par l'un de ces artistes !
+          </p>
+          <details>
+            <summary>Comment y accéder ?</summary>
+            <p>
+              Située dans les hauteurs du 18<sup>eme</sup> Arrondissement de
+              Paris pas très loins de la <em>Cigale</em>.
+            </p>
+            <h4>En Transport en commun :</h4>
+            <ul>
+              <li>Metro 2 - Arrêt <strong>Anvers</strong></li>
+              <li>Metro 12 - Arrêt <strong>Abbesses</strong></li>
+            </ul>
+            <h4>En voiture :</h4>
+            <ul>
+              <li>
+                Parking : <strong>Coeur Montmartre Marché Saint-Pierre </strong>
+                - 14 - rue Pierre Picard, 75018 Paris
+              </li>
+              <li>
+                Parking : <strong>SAGS Parking Anvers </strong> - 41 Blvd
+                Marguerite de Rochechouart, 75018 Paris
+              </li>
+            </ul>
+          </details>
+        </article>
+        <article id="NotreDame">
+          <h3>Cathédrale Notre-Dame de Paris</h3>
+          <img
+            src="./img/monuments/notredame.webp"
+            alt="Image de la Cathédrale Notre Dame de Paris"
+          />
+          <p>
+            La <strong>Cathédrale Notre-Dame de Paris</strong> est une église
+            catholique située dans le 4<sup>eme</sup> Arrondissement de Paris.
+            <br />
+            Visible depuis le pont de Saint Michel, elle est le plus
+            emblématique monument de Paris voir même de la <em>France</em> !
+            <br />
+            Sa construction a débutée en
+            <em>1163</em> et s'est achevée en <em>1345</em>.<br />
+            Malheureusement inaccesible actuellement, suite à l'incendie du 15
+            avril 2019,
+            <strong>
+              sa réouverture est prévue pour le 07 et 08 Décembre 2024.
+            </strong>
+          </p>
+          <details>
+            <summary>Comment y accéder ?</summary>
+            <p>
+              Située dans une petite ile entre l'<em>Hotel de ville</em> de
+              Paris et <em>Saint Michel</em> les hauteurs du 18<sup>eme</sup>
+              Arrondissement de Paris pas très loins de la <em>Cigale</em>.
+            </p>
+            <h4>En Transport en commun :</h4>
+            <ul>
+              <li>Metro 4 - Arrêt <strong>St-Michel</strong></li>
+              <li>Metro 10 - Arrêt <strong>Cluny la Sorbonne</strong></li>
+              <li>RER B et C - Arrêt <strong>St-Michel Notre-Dame</strong></li>
+            </ul>
+            <h4>En voiture :</h4>
+            <ul>
+              <li>
+                Parking : <strong>Indigo Paris Lutèce</strong>
+                - Boulevard du Palais, 75004 Paris
+              </li>
+              <li>
+                Parking :
+                <strong>Saemes Parking Lagrange-Maubert Notre-Dame</strong> - 19
+                Rue Lagrange, 75005 Paris
+              </li>
+            </ul>
+          </details>
+        </article>
+        <article id="ArcTriomphe">
+          <h3>L'Arc de Triomphe de l'Etoile</h3>
+          <img
+            src="./img/monuments/arctriomphe.webp"
+            alt="Image de l'Arc de Triomphe de l'Etoile"
+          />
+          <p>
+            L'<strong>Arc de Triomphe</strong> est un monument ayant 4 portes
+            située à la jonction du 8<sup>eme</sup>, 16<sup>eme</sup> et 17<sup
+              >eme</sup
+            >
+            Arrondissement de Paris. Il est situé sur un rond point et délimite
+            avec le <a href="#Concorde">Concorde</a> la plus belle avenue de la
+            capitale : <em>l'avenue des Champs-Elysées</em>. Il faut noter qu'il
+            est aussi aligné avec l'arche de la Défense.<br />
+            Sa construction a débutée en
+            <em>1806</em> et s'est achevée en <em>1836</em> et possède une
+            hauteur de plus de 49mètres.<br />
+          </p>
+          <details>
+            <summary>Comment y accéder ?</summary>
+            <p>
+              Situé pas deux pas de la <em>porte Maillot</em> sur le rond point
+              débouchant principalement sur l'avenue de la Grande Armée,
+              l'avenue Fosh et l'avenue de Wagram.
+            </p>
+            <h4>En Transport en commun :</h4>
+            <ul>
+              <li>
+                Metro 1, 2 et 6 - Arrêt
+                <strong>Charles de Gaulle Etoile</strong>
+              </li>
+              <li>RER A - Arrêt <strong>Charles de Gaulle Etoile</strong></li>
+            </ul>
+            <h4>En voiture :</h4>
+            <ul>
+              <li>
+                Parking : <strong>Indigo Paris George V</strong>
+                - 103 avenue des Champs-Elysées, 75008 Paris
+              </li>
+              <li>
+                Parking :
+                <strong>Indigo Paris Etoile Wagram</strong> - 22<sub>bis</sub>
+                avenue de Wagram, 75008 Paris
+              </li>
+            </ul>
+          </details>
+        </article>
+        <article id="JardinTuileries">
+          <h3>Le Jardin des Tuileries</h3>
+          <img
+            src="./img/monuments/jardintuileries.webp"
+            alt="Image du Jardin des Tuileries"
+          />
+          <p>
+            Le <strong>Jardin des Tuileries</strong> est un jardin d'une
+            superficie de 25.5ha. Il est situé entre le palais du
+            <a href="#Louvre"> Louvre</a>, la rue de Rivoli et la place de la
+            <a href="#Concorde">Condorde</a>, il est le plus grand et ancien
+            jardin à Paris et est inscrit et inclus dans la protection du
+            patrimoine de l'<abbr
+              title="United Nations Educational, Scientific and Cultural Organization"
+              >UNESCO</abbr
+            >
+            <br />
+            Anciennement un terrain vague, ce jardin a été aménagé sopu l'ancien
+            Régime (construction du palais des Tuileries à partir de
+            <em>1564</em>)
+          </p>
+          <details>
+            <summary>Comment y accéder ?</summary>
+            <p>
+              Situé en plein coeur de Paris et sur la rive droite de la seine.
+              derrière la place de la <a href="#Concorde">Condorde</a>.
+            </p>
+            <h4>En Transport en commun :</h4>
+            <ul>
+              <li>
+                Metro 8 et 12 - Arrêt
+                <strong>Condorde</strong>
+              </li>
+              <li>Metro 1 - Arrêt <strong>Tuileries</strong></li>
+            </ul>
+            <h4>En voiture :</h4>
+            <ul>
+              <li>
+                Parking : <strong>Indigo Paris Louvre</strong>
+                - 1 Av. du Général Lemonnier, 75001 Paris
+              </li>
+              <li>
+                Parking :
+                <strong>Saemes Parking Pyramides</strong> - 15 Rue des
+                Pyramides, 75001 Paris
+              </li>
+            </ul>
+          </details>
+        </article>
+
+        <article id="Concorde">
+          <h3>La place de la Concorde</h3>
+          <img
+            src="./img/monuments/concorde.webp"
+            alt="Image de la place du Concorde"
+          />
+          <p>
+            La <strong>Place de la Concorde</strong>, est située dans le 8<sub
+              >ème</sub
+            >
+            Arrondissements. Elle est au dos du
+            <a href="#JardinTuileries">Jardin des Tuileries</a> et délimite
+            l'avenue des Champs Elysées avec l'<a href="#ArcTriomphe"
+              >Arc de Triomphe</a
+            >. Elle s'étend sur 7.56ha et est la plus grande place de Paris.
+            Elle fait partie des 5 places royales de la capitale et a connue
+            plusieurs noms :
+          </p>
+          <ol>
+            <li>1763 : Place Louis XV</li>
+            <li>1792 : Place de la Révolution</li>
+            <li>1795 : Place de la Concorde</li>
+            <li>1814 : Place Louis XV</li>
+            <li>1826 : Place Louis XVI</li>
+            <li>1828 : Place Louis XV</li>
+            <li>1830 : Place de la Concorde</li>
+          </ol>
+          <details>
+            <summary>Comment y accéder ?</summary>
+            <p>
+              Situé en plein coeur de Paris et sur la rive droite de la seine.
+              dans le dos du
+              <a href="#JardinTuileries">Jardin des Tuileries</a>.
+            </p>
+            <h4>En Transport en commun :</h4>
+            <ul>
+              <li>
+                Metro 8 et 12 - Arrêt
+                <strong>Condorde</strong>
+              </li>
+              <li>Metro 14 - Arrêt <strong>Madeleine</strong></li>
+            </ul>
+            <h4>En voiture :</h4>
+            <ul>
+              <li>
+                Parking :
+                <strong>Indigo Paris Place De La Concorde</strong> - 3608 Place
+                de la Concorde, 75008 Paris
+              </li>
+              <li>
+                Parking : <strong>Indigo Paris Louvre</strong>
+                - 1 Av. du Général Lemonnier, 75001 Paris
+              </li>
+            </ul>
+          </details>
+        </article>
+        <!-- TODO
+
+        <article id="GrandPalais"></article>
+        <article id="QuaiBranly"></article>
+        -->
+      </section>
+
+      <aside>
+        <hr />
+
+        <h2>Sources</h2>
+        <section>
+          <h3>Wiki ville de paris</h3>
+          <a href="https://fr.wikipedia.org/wiki/Paris">
+            <img src="./img/sources/logo-wiki.jpg" alt="logo wikipedia"
+          /></a>
+        </section>
+        <section>
+          <h3>Monuments Paris</h3>
+          <a
+            href="https://www.cometoparis.com/fre/decouvrir-paris/monuments-de-paris-s1032"
+            ><img
+              src="./img/sources/MonumentsParis.png"
+              alt="logo site Monuments de Paris"
+          /></a>
+        </section>
+        <section>
+          <h3>Site du PSG</h3>
+          <a href="https://www.psg.fr/"
+            ><img src="./img/sources/logo-psg.png" alt="logo du PSG" />
+          </a>
+        </section>
+        <section>
+          <h3>Page Youtube d'Expedia</h3>
+          <a href="https://www.youtube.com/@expediafr">
+            <img src="./img/sources/expedia.png" alt="logo expedia" />
+          </a>
+        </section>
+      </aside>
+    </main>
+
+    <!-- ####### Fin du CONTENU DE MA PAGE ###### -->
+
+    <!-- Balise footer : Correspond au footer / pied de page de mon site web-->
+    <footer>
+      <hr />
+      <p>
+        Les données, photos, extraits de ce site sont issus des sites suivants:
+      </p>
+      <ul>
+        <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
+        <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
+
+        <li><a href="https://www.psg.fr/">PSG</a></li>
+        <li><a href="https://www.youtube.com/">Youtube</a></li>
+      </ul>
+
+      <a href="http://validator.w3.org/check?uri=referer"
+        ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
+      /></a>
+    </footer>
+  </body>
+</html>

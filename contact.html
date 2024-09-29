@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="autor" content="Reda MEHIDI" />
+    <meta
+      name="description"
+      content="Site de description de la ville de Paris. Il a été concu dans le cadre d'un projet universitaire dans le but d'apprendre le language HTML5."
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+
+    <title>Site de présentation de la ville de Paris</title>
+  </head>
+
+  <body>
+    <!-- Balise header : Correspond à l'entête/la banière du site web-->
+    <header>
+      <img
+        src="./img/logo.jpg"
+        alt="Logo cliquable de mon site. Permet de se rediriger vers la page d'accueil"
+      />
+      <hgroup>
+        <h1>Paris, une ville magique</h1>
+        <p>Découvrir la ville de paris</p>
+      </hgroup>
+      <hr />
+    </header>
+    <!-- Balise NAV : Correspond au menu de navigation principal de mon site web-->
+    <nav>
+      <ul>
+        <li><a href="./index.html">Présentation</a></li>
+        <li><a href="./monuments.html">Monuments incontournables</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <hr />
+    </nav>
+
+    <!-- ####### CONTENU DE MA PAGE ###### -->
+    <main id="contactPage">
+      <!--Contenu Principal -->
+      <section>
+        <h2>Formulaire de contact</h2>
+        <form
+          action="mailto:redamehidi@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <!-- Genre : Bouton Radio avec 'M.' présélectionné-->
+          <div>
+            <input
+              type="radio"
+              id="monsieur"
+              name="genre"
+              value="monsieur"
+              checked
+            />
+            <label for="monsieur">M.</label>
+            <input type="radio" id="madame" name="genre" value="madame" />
+
+            <label for="madame">Mme.</label>
+
+            <input type="radio" id="autre" name="genre" value="autre" />
+            <label for="autre">Autre.</label>
+          </div>
+          <!-- Nom et Prenom : input de type "text" avec la notion de champ obligatoire et nb caractère min/max-->
+          <div>
+            <label for="nom">Nom : </label>
+            <input
+              id="nom"
+              type="text"
+              name="nom"
+              minlength="2"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div>
+            <label for="prenom">Prenom : </label>
+            <input
+              id="prenom"
+              type="text"
+              name="prenom"
+              minlength="2"
+              maxlength="50"
+              required
+            />
+          </div>
+
+          <!-- Adresse email : input de type "mail" avec un exemple de saisi -->
+          <div>
+            <label for="adresseMail">Adresse email : </label>
+            <input
+              id="adresseMail"
+              type="email"
+              placeholder="antoine.dupont@paris.fr"
+              name="adresseMail"
+            />
+          </div>
+
+          <!-- Téléphone : input de type "tel" avec regex pour les téléphones FR-->
+          <div>
+            <label for="telephone">Téléphone: </label>
+            <input
+              id="telephone"
+              type="tel"
+              maxlength="10"
+              name="telephone"
+              pattern="^0[1-9]{1}[0-9]{8}$"
+            />
+          </div>
+
+          <!-- Mode de transport de voyage : input type=text avec datalist -->
+          <div>
+            <label for="modeTransportVoyage"
+              >Quel est votre moyen de transport favoris pour aller à votre
+              destination de vacances ?
+            </label>
+            <input
+              type="text"
+              id="modeTransportVoyage"
+              name="modeTransportVoyage"
+              list="typesTransport"
+            />
+            <datalist id="typesTransport">
+              <option value="Autre"></option>
+              <option value="Avion"></option>
+              <option value="Bus"></option>
+              <option value="Covoiturage"></option>
+              <option value="Train"></option>
+              <option value="Voiture"></option>
+            </datalist>
+          </div>
+
+          <!-- Nombre avec incrémentation/désincrémantation d'un step prédéfini (default 1) -->
+          <div>
+            <label for="nbVisitParis"
+              >Combien de fois avez vous visité <strong>Paris</strong> ?
+            </label>
+            <input
+              type="number"
+              id="nbVisitParis"
+              name="nbVisitParis"
+              value="0"
+              min="0"
+              max="99"
+              step="1"
+            />
+          </div>
+
+          <!-- Liste Déroulante : SELECT / OPTION -->
+          <div>
+            <label for="modeTransportVisite"
+              >Quel est votre moyen de transport favoris pour visiter une
+              nouvelle ville ?</label
+            >
+            <select id="modeTransportVisite" name="modeTransportVisite">
+              <option value="voiture">Voiture</option>
+              <option value="transportsCommuns">
+                Transport en Commun (Train, RER, Metro, Tram, Bus..)
+              </option>
+              <option value="pied" selected>A pied</option>
+              <option value="velo">En trotinette / Velo</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <!-- Cases à cocher : CHECKBOX -->
+          <div>
+            <fieldset>
+              <legend>Quels sont vos centres d'intérêt ?</legend>
+              <div>
+                <input
+                  type="checkbox"
+                  id="bars"
+                  name="centresInterets"
+                  value="bars"
+                />
+                <label for="bars">Bars et terrasses </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="associatifs"
+                  name="centresInterets"
+                  value="associatifs"
+                />
+                <label for="associatifs">Evènements Associatifs</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="culturels"
+                  name="centresInterets"
+                  value="culturels"
+                />
+                <label for="culturels">Evènements Culturels</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="sports"
+                  name="centresInterets"
+                  value="sports"
+                />
+                <label for="sports">Evènements Sportifs</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="restaurants"
+                  name="centresInterets"
+                  value="restaurants"
+                />
+                <label for="restaurants">Restaurants</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="nocturne"
+                  name="centresInterets"
+                  value="nocturne"
+                />
+                <label for="nocturne">Sorties noctures</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <!-- Notations : barre de selection de type 'volume' (type "range") avec valeur min/max -->
+          <div>
+            <fieldset>
+              <legend>Notation du site</legend>
+              <div>
+                <label for="noteStructure">Structure : </label>
+                <input
+                  type="range"
+                  id="noteStructure"
+                  name="noteStructure"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+              </div>
+              <div>
+                <label for="noteDonnees"> Données : </label>
+                <input
+                  type="range"
+                  id="noteDonnees"
+                  name="noteDonnees"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+              </div>
+              <div>
+                <label for="noteDiversiteElementsHTML">
+                  Diversité des éléments Html :
+                </label>
+                <input
+                  type="range"
+                  id="noteDiversiteElementsHTML"
+                  name="noteDiversiteElementsHTML"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+              </div>
+              <div>
+                <label for="retourVisiteur"
+                  >Commentaires / Suggestions :
+                </label>
+                <textarea id="retourVisiteur" name="retourVisiteur"></textarea>
+              </div>
+            </fieldset>
+          </div>
+
+          <input type="reset" value="Reset" />
+          <button>Envoyer</button>
+        </form>
+      </section>
+
+      <aside>
+        <hr />
+
+        <h2>Sources</h2>
+        <section>
+          <h3>Wiki ville de paris</h3>
+          <a href="https://fr.wikipedia.org/wiki/Paris">
+            <img src="./img/sources/logo-wiki.jpg" alt="logo wikipedia"
+          /></a>
+        </section>
+        <section>
+          <h3>Monuments Paris</h3>
+          <a
+            href="https://www.cometoparis.com/fre/decouvrir-paris/monuments-de-paris-s1032"
+            ><img
+              src="./img/sources/MonumentsParis.png"
+              alt="logo site Monuments de Paris"
+          /></a>
+        </section>
+        <section>
+          <h3>Site du PSG</h3>
+          <a href="https://www.psg.fr/"
+            ><img src="./img/sources/logo-psg.png" alt="logo du PSG" />
+          </a>
+        </section>
+        <section>
+          <h3>Page Youtube d'Expedia</h3>
+          <a href="https://www.youtube.com/@expediafr">
+            <img src="./img/sources/expedia.png" alt="logo expedia" />
+          </a>
+        </section>
+      </aside>
+    </main>
+
+    <!-- ####### Fin du CONTENU DE MA PAGE ###### -->
+    <!-- Balise footer : Correspond au footer / pied de page de mon site web-->
+    <footer>
+      <hr />
+      <p>
+        Les données, photos, extraits de ce site sont issus des sites suivants:
+      </p>
+      <ul>
+        <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
+        <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
+
+        <li><a href="https://www.psg.fr/">PSG</a></li>
+        <li><a href="https://www.youtube.com/">Youtube</a></li>
+      </ul>
+
+      <a href="http://validator.w3.org/check?uri=referer"
+        ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
+      /></a>
+    </footer>
+  </body>
+</html>
