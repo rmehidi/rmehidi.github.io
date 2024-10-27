@@ -9,7 +9,19 @@
       content="Site de description de la ville de Paris. Il a été concu dans le cadre d'un projet universitaire dans le but d'apprendre le language HTML5."
     />
     <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/stylePrint.css"
+      media="print"
+    />
     <title>Site de présentation de la ville de Paris</title>
   </head>
 
@@ -39,7 +51,7 @@
     <!-- ####### CONTENU DE MA PAGE ###### -->
     <main id="monumentsPage">
       <!-- Menu latéral pour naviguer dans les pages longues -->
-      <aside>
+      <aside id="indexpage">
         <h2>Accès Rapide</h2>
         <ul>
           <li><a href="#TourEiffel">La Tour Eiffel</a></li>
@@ -56,7 +68,7 @@
         </ul>
       </aside>
       <!--Contenu Principal -->
-      <section>
+      <section id="content">
         <h2>Les Monuments incontournables</h2>
 
         <article id="TourEiffel">
@@ -76,7 +88,7 @@
             Sa hauteur initiale était de 300m et actuellement avec les
             différentes anteines elle dépasse 330m.
           </p>
-          <details>
+          <details open>
             <summary>Comment y accéder ?</summary>
             <p>
               Située à la <em>Place de la résitance</em> dans le 7<sup>ème</sup>
@@ -111,7 +123,7 @@
             Il a été pendant de nombreuses années le grand palais royal conservé
             jusqu'au règne de Louis XIV.
           </p>
-          <details>
+          <details open>
             <summary>Comment y accéder ?</summary>
             <p>
               Située dans le 1<sup>er</sup> Arrondissements de Paris entre le
@@ -158,7 +170,7 @@
             Il est impératif de repartir de cette visite avec votre
             auto-portrait déssiné en direct par l'un de ces artistes !
           </p>
-          <details>
+          <details open>
             <summary>Comment y accéder ?</summary>
             <p>
               Située dans les hauteurs du 18<sup>eme</sup> Arrondissement de
@@ -203,7 +215,7 @@
               sa réouverture est prévue pour le 07 et 08 Décembre 2024.
             </strong>
           </p>
-          <details>
+          <details open>
             <summary>Comment y accéder ?</summary>
             <p>
               Située dans une petite ile entre l'<em>Hotel de ville</em> de
@@ -249,7 +261,7 @@
             <em>1806</em> et s'est achevée en <em>1836</em> et possède une
             hauteur de plus de 49mètres.<br />
           </p>
-          <details>
+          <details open>
             <summary>Comment y accéder ?</summary>
             <p>
               Situé pas deux pas de la <em>porte Maillot</em> sur le rond point
@@ -299,7 +311,7 @@
             Régime (construction du palais des Tuileries à partir de
             <em>1564</em>)
           </p>
-          <details>
+          <details open>
             <summary>Comment y accéder ?</summary>
             <p>
               Situé en plein coeur de Paris et sur la rive droite de la seine.
@@ -355,7 +367,7 @@
             <li>1828 : Place Louis XV</li>
             <li>1830 : Place de la Concorde</li>
           </ol>
-          <details>
+          <details open>
             <summary>Comment y accéder ?</summary>
             <p>
               Situé en plein coeur de Paris et sur la rive droite de la seine.
@@ -391,7 +403,7 @@
         -->
       </section>
 
-      <aside>
+      <aside id="sources">
         <hr />
 
         <h2>Sources</h2>
@@ -430,20 +442,23 @@
     <!-- Balise footer : Correspond au footer / pied de page de mon site web-->
     <footer>
       <hr />
-      <p>
-        Les données, photos, extraits de ce site sont issus des sites suivants:
-      </p>
-      <ul>
-        <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
-        <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
+      <div>
+        <p>
+          Les données, photos, extraits de ce site sont issus des sites
+          suivants:
+        </p>
+        <ul>
+          <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
+          <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
 
-        <li><a href="https://www.psg.fr/">PSG</a></li>
-        <li><a href="https://www.youtube.com/">Youtube</a></li>
-      </ul>
+          <li><a href="https://www.psg.fr/">PSG</a></li>
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+        </ul>
 
-      <a href="http://validator.w3.org/check?uri=referer"
-        ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
-      /></a>
+        <a href="http://validator.w3.org/check?uri=referer"
+          ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>

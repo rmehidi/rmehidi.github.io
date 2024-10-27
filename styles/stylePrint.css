@@ -1,0 +1,18 @@
+/* STRUCTURE DE LA PAGE */
+header,
+nav,
+hr,
+iframe,
+aside,
+footer {
+  display: none;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+#tabStatsJoueur {
+  display: block;
+}

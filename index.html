@@ -8,7 +8,19 @@
       name="description"
       content="Site de description de la ville de Paris. Il a été concu dans le cadre d'un projet universitaire dans le but d'apprendre le language HTML5."
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/stylePrint.css"
+      media="print"
+    />
 
     <title>Site de présentation de la ville de Paris</title>
   </head>
@@ -37,9 +49,9 @@
     </nav>
 
     <!-- ####### CONTENU DE MA PAGE ###### -->
-    <main id="indexPage">
+    <main>
       <!-- Menu latéral pour naviguer dans les pages longues -->
-      <aside>
+      <aside id="indexpage">
         <h2>Accès Rapide</h2>
         <ul>
           <li><a href="#Histoire">Son histoire</a></li>
@@ -49,7 +61,7 @@
         </ul>
       </aside>
       <!--Contenu Principal -->
-      <section>
+      <section id="content">
         <h2>Présentation de la ville de Paris</h2>
 
         <article id="Histoire">
@@ -79,112 +91,125 @@
             Vidéo de présentation de la Ville de Paris par
             <a href="https://www.youtube.com/@expediafr">Expedia</a>
           </h3>
-          <iframe
-            src="https://www.youtube.com/embed/bQoOev5GNYM?si=gsudHG4RB2jLf6tY"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          >
-          </iframe>
+          <div class="blocContenaire">
+            <iframe
+              src="https://www.youtube.com/embed/bQoOev5GNYM?si=gsudHG4RB2jLf6tY"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
         </article>
         <article id="PSG">
           <h3>Son club de football</h3>
-          <figure>
-            <a href="https://www.psg.fr/"
-              ><img
-                src="./img/sources/logo-psg.png"
-                alt="Image cliquable de l'écusson du Paris Saint Germain permettant d'accéder au site officiel du PSG"
-              />
-            </a>
-            <figcaption>
-              Ecusson du club du <abbr title="Paris Saint Germain">PSG</abbr>
-            </figcaption>
-          </figure>
-          <p>
-            Son club de football mythique est le
-            <abbr title="Paris Saint Germain">PSG</abbr>. Ce club porte les
-            couleurs bleu et rouge et leur slogan est
-            <em>Paris est magique !</em> <br />
-            Il a été créé en 1970 lors de la fusion entre la section football du
-            <em>Stade Saint Germanois</em> et du <em>Paric FC</em>.<br />
-            De nombreuses stars internationnales du football ont été signés dans
-            ce club. <br />
+          <div id="gridClubPsg">
+            <div class="logoGridPSG">
+              <figure>
+                <a href="https://www.psg.fr/"
+                  ><img
+                    src="./img/sources/logo-psg.png"
+                    alt="Image cliquable de l'écusson du Paris Saint Germain permettant d'accéder au site officiel du PSG"
+                  />
+                </a>
+                <figcaption>
+                  Ecusson du club du
+                  <abbr title="Paris Saint Germain">PSG</abbr>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="detailGridPSG>
+              <p>
+                Son club de football mythique est le
+                <abbr title="Paris Saint Germain">PSG</abbr>. Ce club porte les
+                couleurs bleu et rouge et leur slogan est
+                <em>Paris est magique !</em> <br />
+                Il a été créé en 1970 lors de la fusion entre la section
+                football du
+                <em>Stade Saint Germanois</em> et du <em>Paric FC</em>.<br />
+                De nombreuses stars internationnales du football ont été signés
+                dans ce club.
+              </p>
+            </div>
+          </div>
 
-            <br />Voici un tableau récapitulatif des joueurs de légende
-            mentionné sur leur site internet :
-          </p>
-          <table>
-            <caption>
-              Statistique des joueurs de légendes du
-              <abbr title="Paris Saint Germain">PSG</abbr>
-            </caption>
-            <thead>
-              <tr>
-                <th>Nom du Joueur</th>
+          <div id="tabStatsJoueur">
+            <p>
+              Voici un tableau récapitulatif des joueurs de légende mentionné
+              sur leur site internet :
+            </p>
+            <table>
+              <caption>
+                Statistique des joueurs de légendes du
+                <abbr title="Paris Saint Germain">PSG</abbr>
+              </caption>
+              <thead>
+                <tr>
+                  <th>Nom du Joueur</th>
 
-                <th>Saisons joués</th>
-                <th>Matches joués</th>
-                <th>Buts marqués</th>
-                <th>Passes décisives</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Ronaldinhio</td>
-                <td>2</td>
-                <td>77</td>
-                <td>25</td>
-                <td>18</td>
-              </tr>
-              <tr>
-                <td>Pauleta</td>
-                <td>5</td>
-                <td>252</td>
-                <td>136</td>
-                <td><abbr title="Non communiqué">n.c</abbr></td>
-              </tr>
-              <tr>
-                <td>David Beckhan</td>
-                <td>1</td>
-                <td>14</td>
-                <td><abbr title="Non communiqué">n.c</abbr></td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>Zlatan Ibrahimovic</td>
-                <td>4</td>
-                <td>180</td>
-                <td>156</td>
-                <td>54</td>
-              </tr>
-              <tr>
-                <td>Rai</td>
-                <td>5</td>
-                <td>228</td>
-                <td>75</td>
-                <td><abbr title="Non communiqué">n.c</abbr></td>
-              </tr>
-              <tr>
-                <td>George Weah</td>
-                <td>3</td>
-                <td>138</td>
-                <td>55</td>
-                <td><abbr title="Non communiqué">n.c</abbr></td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="5">
-                  Source: Site officiel du
-                  <a href="https://www.psg.fr/">
-                    <abbr title="Paris Saint Germain">PSG</abbr>
-                  </a>
-                </td>
-              </tr>
-            </tfoot>
-          </table>
-
+                  <th>Saisons joués</th>
+                  <th>Matches joués</th>
+                  <th>Buts marqués</th>
+                  <th>Passes décisives</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ronaldinhio</td>
+                  <td>2</td>
+                  <td>77</td>
+                  <td>25</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Pauleta</td>
+                  <td>5</td>
+                  <td>252</td>
+                  <td>136</td>
+                  <td><abbr title="Non communiqué">n.c</abbr></td>
+                </tr>
+                <tr>
+                  <td>David Beckhan</td>
+                  <td>1</td>
+                  <td>14</td>
+                  <td><abbr title="Non communiqué">n.c</abbr></td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Zlatan Ibrahimovic</td>
+                  <td>4</td>
+                  <td>180</td>
+                  <td>156</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td>Rai</td>
+                  <td>5</td>
+                  <td>228</td>
+                  <td>75</td>
+                  <td><abbr title="Non communiqué">n.c</abbr></td>
+                </tr>
+                <tr>
+                  <td>George Weah</td>
+                  <td>3</td>
+                  <td>138</td>
+                  <td>55</td>
+                  <td><abbr title="Non communiqué">n.c</abbr></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="5">
+                    Source: Site officiel du
+                    <a href="https://www.psg.fr/">
+                      <abbr title="Paris Saint Germain">PSG</abbr>
+                    </a>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
           <p>
             En terme de football, son principal rival est
             <abbr title="L'Olympique Marseillaise"> l'OM</abbr> qui se prétend
@@ -223,7 +248,7 @@
         </article>
       </section>
 
-      <aside>
+      <aside id="sources">
         <hr />
 
         <h2>Sources</h2>
@@ -261,20 +286,23 @@
     <!-- Balise footer : Correspond au footer / pied de page de mon site web-->
     <footer>
       <hr />
-      <p>
-        Les données, photos, extraits de ce site sont issus des sites suivants:
-      </p>
-      <ul>
-        <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
-        <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
+      <div>
+        <p>
+          Les données, photos, extraits de ce site sont issus des sites
+          suivants:
+        </p>
+        <ul>
+          <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
+          <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
 
-        <li><a href="https://www.psg.fr/">PSG</a></li>
-        <li><a href="https://www.youtube.com/">Youtube</a></li>
-      </ul>
+          <li><a href="https://www.psg.fr/">PSG</a></li>
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+        </ul>
 
-      <a href="http://validator.w3.org/check?uri=referer"
-        ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
-      /></a>
+        <a href="http://validator.w3.org/check?uri=referer"
+          ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>

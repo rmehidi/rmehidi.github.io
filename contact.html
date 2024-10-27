@@ -9,7 +9,19 @@
       content="Site de description de la ville de Paris. Il a été concu dans le cadre d'un projet universitaire dans le but d'apprendre le language HTML5."
     />
     <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/stylePrint.css"
+      media="print"
+    />
     <title>Site de présentation de la ville de Paris</title>
   </head>
 
@@ -39,7 +51,7 @@
     <!-- ####### CONTENU DE MA PAGE ###### -->
     <main id="contactPage">
       <!--Contenu Principal -->
-      <section>
+      <section ">
         <h2>Formulaire de contact</h2>
         <form
           action="mailto:redamehidi@gmail.com"
@@ -47,21 +59,28 @@
           enctype="text/plain"
         >
           <!-- Genre : Bouton Radio avec 'M.' présélectionné-->
-          <div>
-            <input
-              type="radio"
-              id="monsieur"
-              name="genre"
-              value="monsieur"
-              checked
-            />
-            <label for="monsieur">M.</label>
-            <input type="radio" id="madame" name="genre" value="madame" />
+          <div id="flexLabel">
+            <div class="eltGridLabel">
 
-            <label for="madame">Mme.</label>
+              <label for="monsieur">M.</label>
+                            <input
+                type="radio"
+                id="monsieur"
+                name="genre"
+                value="monsieur"
+                checked
+              />
+            </div>
+            <div class="eltGridLabel">
 
-            <input type="radio" id="autre" name="genre" value="autre" />
-            <label for="autre">Autre.</label>
+              <label for="madame">Mme.</label>
+                            <input type="radio" id="madame" name="genre" value="madame" />
+            </div>
+            <div class="eltGridLabel">
+
+              <label for="autre">Autre.</label>
+                            <input type="radio" id="autre" name="genre" value="autre" />
+            </div>
           </div>
           <!-- Nom et Prenom : input de type "text" avec la notion de champ obligatoire et nb caractère min/max-->
           <div>
@@ -167,7 +186,7 @@
 
           <!-- Cases à cocher : CHECKBOX -->
           <div>
-            <fieldset>
+            <fieldset class="interet">
               <legend>Quels sont vos centres d'intérêt ?</legend>
               <div>
                 <input
@@ -274,12 +293,12 @@
             </fieldset>
           </div>
 
-          <input type="reset" value="Reset" />
-          <button>Envoyer</button>
+          <input type="reset" value="Reset" class="magin-top-05"/>
+          <button class="magin-top-05" >Envoyer</button>
         </form>
       </section>
 
-      <aside>
+      <aside id="sources">
         <hr />
 
         <h2>Sources</h2>
@@ -317,20 +336,23 @@
     <!-- Balise footer : Correspond au footer / pied de page de mon site web-->
     <footer>
       <hr />
-      <p>
-        Les données, photos, extraits de ce site sont issus des sites suivants:
-      </p>
-      <ul>
-        <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
-        <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
+      <div>
+        <p>
+          Les données, photos, extraits de ce site sont issus des sites
+          suivants:
+        </p>
+        <ul>
+          <li><a href="https://fr.wikipedia.org/">Wikipédia</a></li>
+          <li><a href="https://fr.wikipedia.org/">ComeToParis</a></li>
 
-        <li><a href="https://www.psg.fr/">PSG</a></li>
-        <li><a href="https://www.youtube.com/">Youtube</a></li>
-      </ul>
+          <li><a href="https://www.psg.fr/">PSG</a></li>
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+        </ul>
 
-      <a href="http://validator.w3.org/check?uri=referer"
-        ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
-      /></a>
+        <a href="http://validator.w3.org/check?uri=referer"
+          ><img src="./img/ValidW3C.png" alt="Icone de validation W3C"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>
